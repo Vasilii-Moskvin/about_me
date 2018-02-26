@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+    Index
+{% endblock %}
+{% block h1 %}Визитка{% endblock %}
+{% block content %}
+		<div class="content">
+			<div class="my_card">
+				<div class="my_photo">
+					<img width="240" height="240"
+						 src="{{my_data.logo}}"
+						 alt = "{{my_data.logo_alt}}">
+				</div>
+				<div class="inf_about_me">
+				    <table>
+				    	<tr>
+							<td>Имя</td>
+							<td>{{my_data.name}}</td>
+						</tr>
+						<tr>
+							<td>Фамилия</td>
+							<td>{{my_data.surname}}</td>
+						</tr>
+						<tr>
+							<td>Возраст</td>
+							<td>{{my_data.age}}</td>
+						</tr>
+						<tr>
+							<td>Город</td>
+							<td>{{my_data.city}}</td>
+						</tr>
+						<tr>
+							<td>Телефон</td>
+							<td>{{my_data.phone}}</td>
+						</tr>
+						<tr>
+							<td>e-mail</td>
+							<td><a href="mailto:{{my_data.my_email}}">{{my_data.my_email}}</a></td>
+						</tr>
+				    </table>
+				</div>
+			</div>
+		</div>
+{% endblock %}

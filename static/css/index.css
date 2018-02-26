@@ -1,0 +1,17 @@
+.my_card{
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.my_photo {
+   float: left;
+}
+.inf_about_me {
+    float: left;
+    margin-left: 20px;
+}
+
+.inf_about_me > table > tbody > tr > td {
+    vertical-align: top;
+}

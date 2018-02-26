@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+    My works
+{% endblock %}
+{% block add_link %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/my_work.css' %}">
+{% endblock %}
+{% block h1 %}Работа{% endblock %}
+{% block content %}
+		<div class="content">
+			<div class="my_work">
+				<div class="inf_about_work">
+				    <table>
+				    	<tr>
+							<td>Название</td>
+							<td>{{work.name}}</td>
+				    	</tr>
+						<tr>
+							<td>Адрес</td>
+							<td>{{work.address}}</td>
+				    	</tr>
+						<tr>
+							<td>Должность</td>
+							<td>{{work.post}}</td>
+				    	</tr>
+						<tr>
+							<td>Начало работы</td>
+							<td>{{work.work_from}}</td>
+				    	</tr>
+						<tr>
+							<td>Конец работы</td>
+							<td>{{work.work_to}}</td>
+				    	</tr>
+				    </table>
+				</div>
+			</div>
+		</div>
+{% endblock %}

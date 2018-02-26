@@ -1,0 +1,29 @@
+.place_of_study{
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.place_of_study > .icon{
+    width: 320px;
+    float: left;
+}
+
+.place_of_study > .icon > a > img{
+    display: block;
+    margin: 0 auto;
+}
+
+.place_of_study > .icon > a > img:hover{
+	opacity: 0.5;
+}
+
+.place_of_study > .courses{
+    width: 320px;
+    float: left;
+}
+
+.place_of_study > .courses > dl > dt{
+    margin-top: 1em;
+    text-indent: 10px;
+}

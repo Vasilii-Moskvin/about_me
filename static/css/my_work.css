@@ -1,0 +1,36 @@
+.my_work{
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.logo {
+   float: left;
+}
+
+.logo > a > img:hover{
+	opacity: 0.5;
+}
+
+.inf_about_work {
+    float: left;
+    margin-left: 20px;
+}
+
+.inf_about_work > table > tbody > tr > td{
+    vertical-align: top;
+}
+
+.inf_about_work > table > tbody > tr > td:nth-child(1){
+    width: 120px;
+}
+
+.inf_about_work > table > tbody > tr > td:nth-child(2) {
+
+    width: 200px;
+
+}
+
+.map {
+    float: left;
+}
